@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter Sign-Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <!-- Formulário -->
+    <section class="form-section" id="form-section">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure updates are a success</li>
+        <li>And much more!</li>
+      </ul>
+
+      <form id="newsletter-form">
+        <label for="email">Email address</label>
+        <input type="email" id="email" placeholder="email@company.com" required>
+        <button type="submit">Subscribe to monthly newsletter</button>
+        <small id="error-message"></small>
+      </form>
+    </section>
+
+    <!-- Mensagem de Sucesso -->
+    <section class="success-section hidden" id="success-section">
+      <h1>Thanks for subscribing!</h1>
+      <p>A confirmation email has been sent to <strong id="user-email"></strong>. Please open it and click the button inside to confirm your subscription.</p>
+      <button id="dismiss-btn">Dismiss message</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
